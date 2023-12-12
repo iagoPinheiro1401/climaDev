@@ -19,7 +19,7 @@ const PrimaryColor = styled.span`
 
 export default function Logo({ showImage, type }) {
     return(
-        <div>
+        <>
             {showImage && <img src="/woman.svg"/>}   
             {type === 'vertical' && 
                 <VerticalText>
@@ -31,7 +31,7 @@ export default function Logo({ showImage, type }) {
                     Clima<PrimaryColor>Dev</PrimaryColor>
                 </HorizontalText>
             }      
-        </div>
+        </>
     )
 }
 
