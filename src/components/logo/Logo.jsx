@@ -8,8 +8,13 @@ const VerticalText = styled.h1`
     margin-top: -80px;
 `
 
+const HorizontalText = styled.h1`
+    font-size: 40px;
+`
+
 const PrimaryColor = styled.span`
     color: ${props => props.theme.colors.primary};
+    text-transform: uppercase;
 `
 
 export default function Logo({ showImage, type }) {
@@ -20,7 +25,16 @@ export default function Logo({ showImage, type }) {
                 <VerticalText>
                     Clima <br/><PrimaryColor>Dev</PrimaryColor>
                 </VerticalText>
-            }       
+            }
+            {type === 'horizontal' && 
+                <HorizontalText>
+                    Clima<PrimaryColor>Dev</PrimaryColor>
+                </HorizontalText>
+            }      
         </div>
     )
+}
+
+Logo.defaultProps = {
+    type: 'horizontal'
 }
