@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.colors.white};
     box-sizing: border-box;
     font-family: sans-serif;
+    color: ${props => props.theme.colors.black};
   }
 `
 

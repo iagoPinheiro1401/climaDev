@@ -8,13 +8,36 @@ const Body = styled.div`
     min-height: 100vh;
 `
 
+const Content = styled.div`
+    padding: 80px 0;
+    background: none;
+`
+
+const Text = styled.p`
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+    padding: 0;
+    margin: 0;
+`
+
+const CityName = styled.h2`
+    font-size: 40px;
+    background: none;
+    padding: 0;
+    margin: 0;  
+`
+
 export default function InfoPage() {
     return(
         <>
             <Navbar/>
             <Body>
                 <Container>
-                    Conteúdo
+                    <Content>
+                        <Text>Previsão do tempo para</Text>
+                        <CityName>Iguatu, Ce, Brasil</CityName>
+                    </Content>
                 </Container>
             </Body>
         </>
