@@ -10,6 +10,7 @@ const StyledInput = styled.input`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: bold;
     margin-top: 50px;
+    width: 100%;
 `
 
 export default function Input(props) {
