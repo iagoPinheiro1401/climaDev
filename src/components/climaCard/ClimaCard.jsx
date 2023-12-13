@@ -47,25 +47,25 @@ const InfoTemp = styled.span`
     ${props => props.red  && 'color: #ff0000'}
 `
 
-export default function ClimaCard() {
+export default function ClimaCard({ title, icon, description, temp, feels, max, min}) {
     return(
         <StyledClimaCard>
-            <Tile>Card</Tile>
+            <Tile>{title}</Tile>
             <BasicInfo>
-                <BasicInfoImg src="http://openweathermap.org/img/wn/02d@2x.png"/>
-                <BasicInfoText>Algumas nuvens</BasicInfoText>
+                <BasicInfoImg src={`http://openweathermap.org/img/wn/${icon}@2x.png`}/>
+                <BasicInfoText>{description}</BasicInfoText>
             </BasicInfo>
             <InfoLine>
-                Temperatura<InfoTemp>29ºC</InfoTemp>
+                Temperatura<InfoTemp>{temp}ºC</InfoTemp>
             </InfoLine>
             <InfoLine>
-                Sensação<InfoTemp>29ºC</InfoTemp>
+                Sensação<InfoTemp>{feels}ºC</InfoTemp>
             </InfoLine>
             <InfoLine>
-                Mínima<InfoTemp blue>29ºC</InfoTemp>
+                Mínima<InfoTemp blue>{min}ºC</InfoTemp>
             </InfoLine>
             <InfoLine>
-                Máxima<InfoTemp red>29ºC</InfoTemp>
+                Máxima<InfoTemp red>{max}ºC</InfoTemp>
             </InfoLine>
         </StyledClimaCard>
     )
