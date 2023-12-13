@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 import Navbar from "../../../src/components/navbar/navbar"
 import Container from "../../../src/components/layout/container/Container"
+import ClimaCard from "../../../src/components/climaCard/ClimaCard"
 
 const Body = styled.div`
     background-color: ${props => props.theme.colors.grey};
@@ -28,6 +29,15 @@ const CityName = styled.h2`
     margin: 0;  
 `
 
+const InfoContainer = styled.div`
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 100px;
+`
+
 export default function InfoPage() {
     return(
         <>
@@ -37,6 +47,11 @@ export default function InfoPage() {
                     <Content>
                         <Text>Previsão do tempo para</Text>
                         <CityName>Iguatu, Ce, Brasil</CityName>
+                        <InfoContainer>
+                            <ClimaCard/>
+                            <ClimaCard/>
+                            <ClimaCard/>
+                        </InfoContainer>
                     </Content>
                 </Container>
             </Body>
