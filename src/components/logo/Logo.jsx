@@ -15,6 +15,7 @@ const HorizontalText = styled.h1`
 const PrimaryColor = styled.span`
     color: ${props => props.theme.colors.primary};
     text-transform: uppercase;
+    background: none;
 `
 
 export default function Logo({ showImage, type }) {
