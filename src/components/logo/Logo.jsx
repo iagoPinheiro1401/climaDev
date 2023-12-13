@@ -4,8 +4,8 @@ const VerticalText = styled.h1`
     font-size: 80px;
     color: ${props => props.theme.colors.black};
     line-height: 70px;
-    margin-left: 150px;
-    margin-top: -80px;
+    margin-left: 220px;
+    margin-top: -90px;
 `
 
 const HorizontalText = styled.h1`
